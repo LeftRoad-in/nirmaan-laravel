@@ -23,10 +23,14 @@ function HomeSeventhPage() {
   };
 
   return (
-    <div className="seventh-page-container ">
+    <div className="seventh-page-container">
       <div className="nirman-logo-7">
-        <img src={nirmanLogo7} className="page7-logo" />
-        <img src={getToKnow} className="page7-heading" />
+        <img src={nirmanLogo7} className="page7-logo" alt="Nirman Logo" />
+        <img
+          src={getToKnow}
+          className="page7-heading"
+          alt="Get to Know Us Better"
+        />
       </div>
       <div className="user-info7">
         <form onSubmit={handleSubmit} className="user-info7__form">
@@ -51,21 +55,20 @@ function HomeSeventhPage() {
           />
           <div className="fsubmit-input">
             {isMobile ? (
-              <textarea name=""
+              <textarea
+                name="subject"
                 value={formData.subject}
                 id="subject"
                 cols="30"
                 rows="8"
                 onChange={handleInputChange}
                 className="subject-input common-style7"
-
               ></textarea>
             ) : (
               <input
-                type="text" text
+                type="text"
                 id="subject"
                 name="subject"
-
                 placeholder="Subject"
                 value={formData.subject}
                 onChange={handleInputChange}
@@ -81,24 +84,33 @@ function HomeSeventhPage() {
           </div>
         </form>
       </div>
+      <div className="gap"></div>
       <div className="links">
         <ul>
           <li>
-            <a href="/teams">Teams</a>
+            <Link to="/teams" style={{ color: "black" }}>
+              Teams
+            </Link>
           </li>
           <li>
-            <a href="/about-us">About</a>
+            <Link to="/about-us" style={{ color: "black" }}>
+              About
+            </Link>
           </li>
           <li>
-            <a href="/work-with-start-ups">Startups</a>
+            <Link to="/work-with-start-ups" style={{ color: "black" }}>
+              Startups
+            </Link>
           </li>
           <li>
-            <a href="/media">Media</a>
+            <Link to="/media" style={{ color: "black" }}>
+              Media
+            </Link>
           </li>
         </ul>
       </div>
 
-      <Footer />
+      <Footer className="Footer" />
     </div>
   );
 }

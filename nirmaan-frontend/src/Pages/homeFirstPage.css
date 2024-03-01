@@ -14,7 +14,13 @@ body {
   top: 0;
   margin: 0;
   padding: 0;
-  background-image: linear-gradient(to bottom, rgba(143, 255, 149, 0), rgba(102, 187, 106, 0) 40%, rgba(102, 187, 106, 1)), url("../images//HOME-BACKGROUND.png");
+  background-image: linear-gradient(
+      to bottom,
+      rgba(143, 255, 149, 0),
+      rgba(102, 187, 106, 0) 40%,
+      rgba(102, 187, 106, 1)
+    ),
+    url("../images//HOME-BACKGROUND.png");
   background-size: cover;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -92,8 +98,8 @@ body {
   margin-top: 8vh;
   box-sizing: border-box;
   font-family: "GT America", sans-serif;
-  font-size: 24px;
-  font-weight: 300;
+  font-size: 28px;
+  font-weight: 100;
   line-height: 29px;
   white-space: pre-line;
   max-width: 16vw;
@@ -276,7 +282,6 @@ body {
 .inner-div-fp__wrapper::-webkit-scrollbar {
   width: 5px; /* Set the width of the scrollbar */
   height: 3px;
-  
 }
 
 .inner-div-fp__wrapper::-webkit-scrollbar-thumb {
@@ -288,7 +293,7 @@ body {
   display: none;
 }
 
-.mobile-this-is{
+.mobile-this-is {
   display: none;
 }
 
@@ -311,8 +316,8 @@ body {
   .inner-list-div {
     font-size: 16px;
     padding: 20px 20% 25px 1rem;
-    animation: moveRightToLeft 5s linear infinite, moveLeftToRight 10s linear infinite;
-
+    animation: moveRightToLeft 5s linear infinite,
+      moveLeftToRight 10s linear infinite;
   }
   .inner-list-div__fifth {
     padding: 1rem 2rem;
@@ -380,7 +385,7 @@ body {
 }
 
 @media (max-width: 998px) {
-  .mobile-this-is{
+  .mobile-this-is {
     display: block;
   }
   .nirmaan-logo {
@@ -462,7 +467,7 @@ body {
     margin: 0 auto;
     margin-bottom: 1rem;
   }
-  .homeFirstPage{
+  .homeFirstPage {
     height: auto;
   }
 }
@@ -480,8 +485,6 @@ body {
   }
 }
 
-
- 
 @keyframes moveRightToLeft {
   0% {
     transform: translateX(40%);

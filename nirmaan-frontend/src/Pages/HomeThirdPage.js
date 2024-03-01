@@ -16,14 +16,16 @@ function HomeThirdPage() {
   };
   return (
     <>
-
       <div className="thirdPage-container">
         <div className="thirdPage-container__header">
           <div className="main-page__heading">
             <h1>WHAT WE OFFER</h1>
           </div>
           <div className="main-page__sub-wrapper">
-            <button className="main-page__apply-to" onClick={handleApplyToNirman}>
+            <button
+              className="main-page__apply-to"
+              onClick={handleApplyToNirman}
+            >
               APPLY TO NIRMAAN
             </button>
             <h2 className="main-page__subtitle"></h2>
@@ -31,8 +33,6 @@ function HomeThirdPage() {
               <img src={nirmaanLogo} alt="" />
             </div>
           </div>
-
-
         </div>
         <div className="offer-list-container">
           <div className="offer-list">
@@ -40,7 +40,8 @@ function HomeThirdPage() {
               <StartUpSUbComp
                 image={mentoring}
                 heading="Mentoring"
-                content="Project teams are connected with mentors, who will guide and nudge these groups towards business success"
+                content="Sector-specific mentors for the teams to guide the student entrepreneurs w.r.t problem identification, Idea validation, and Customer discovery
+"
                 thirdComp="true"
               />
             </div>
@@ -76,8 +77,8 @@ function HomeThirdPage() {
               <StartUpSUbComp
                 thirdComp="true"
                 image={mentoring}
-                heading="Pre-Seed funding"
-                content="Funding"
+                heading="Funding"
+                content="Seed funding of 2 lacs in Pratham program which can be immensely helpful"
               />
             </div>
             <div className="white-inner-div-common-style">
@@ -91,17 +92,19 @@ function HomeThirdPage() {
               />
             </div>
             <div className="offer-btn__wrapper">
-            <button className="offer-list__more-btn" onClick={handleAboutUs}>
-              SEE MORE ABOUT US
-            </button>
+              <button className="offer-list__more-btn" onClick={handleAboutUs}>
+                SEE MORE ABOUT US
+              </button>
             </div>
-            <button className="offer-list__more-btn mobile-about" onClick={handleAboutUs}>ABOUT US</button>
+            <button
+              className="offer-list__more-btn mobile-about"
+              onClick={handleAboutUs}
+            >
+              ABOUT US
+            </button>
           </div>
-
         </div>
-
       </div>
-
 
       {/* <div className="thirdPage-container">
       <div className="header">
@@ -200,9 +203,7 @@ function HomeThirdPage() {
       </div>
       <div className="footer-third"></div>
     </div> */}
-
     </>
   );
-
 }
 export default HomeThirdPage;

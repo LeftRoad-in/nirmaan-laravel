@@ -1,10 +1,8 @@
 import React from "react";
-import { motion } from "framer-motion";
 import "./Footer.css";
 import mailNnirmaan from "../images/mail-nir.png";
 import location from "../images/location.png";
 import SocialMediaIcons from "./SocialMediaIcons";
-import copyRight from "../images/copyright.png";
 
 function Footer() {
   return (
@@ -13,29 +11,31 @@ function Footer() {
         <div className="common-footer-container">
           <div className="common-footer__wrapper">
             <div className="common-footer__col email-address">
-              <a href="" className="common-footer__address">
+              <a
+                href="mailto:nirmaan@smail.iitm.ac.in"
+                className="common-footer__address"
+              >
                 <div className="common-footer__img-box">
                   <img src={mailNnirmaan} />
                 </div>
                 nirmaan@smail.iitm.ac.in
               </a>
-              <a href="" className="common-footer__address">
+              <a
+                href="https://maps.app.goo.gl/zMA34y4bdVz5kYFs5"
+                className="common-footer__address"
+              >
                 <div className="common-footer__img-box">
                   <img src={location} className="location" />
                 </div>
                 Indian Institute of Technology Madras, Chennai - 600036
-
               </a>
             </div>
             <div className="common-footer__col common-footer__col--social">
               <SocialMediaIcons />
-
             </div>
           </div>
           <div className="common-footer__copyright">
-            <p>
-            2023 IIT Madras - All rights reserved
-            </p>
+            <p>2023 IIT Madras - All rights reserved</p>
           </div>
         </div>
       </footer>
@@ -73,5 +73,3 @@ function Footer() {
 }
 
 export default Footer;
-
-
