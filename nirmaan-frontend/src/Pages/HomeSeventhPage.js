@@ -88,24 +88,24 @@ function HomeSeventhPage() {
       <div className="links">
         <ul>
           <li>
-            <Link to="/teams" style={{ color: "black" }}>
+            <a href="/Teams" style={{ color: "black" }}>
               Teams
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="/about-us" style={{ color: "black" }}>
+            <a href="/about-us" style={{ color: "black" }}>
               About
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="/work-with-start-ups" style={{ color: "black" }}>
+            <a href="/work-with-start-ups" style={{ color: "black" }}>
               Startups
-            </Link>
+            </a>
           </li>
           <li>
-            <Link to="/media" style={{ color: "black" }}>
+            <a href="/media" style={{ color: "black" }}>
               Media
-            </Link>
+            </a>
           </li>
         </ul>
       </div>

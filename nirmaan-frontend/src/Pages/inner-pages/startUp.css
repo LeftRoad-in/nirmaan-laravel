@@ -1,5 +1,7 @@
 .sp-main {
   display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .startup-heading {
@@ -117,7 +119,14 @@
 /* second section css  */
 
 .second-green-section {
-  background: linear-gradient(90deg, #2e9635 -0.29%, #66bb6a 11.2%, #66bb6a 51.32%, #66bb6a 89.3%, #2e9635 100%);
+  background: linear-gradient(
+    90deg,
+    #2e9635 -0.29%,
+    #66bb6a 11.2%,
+    #66bb6a 51.32%,
+    #66bb6a 89.3%,
+    #2e9635 100%
+  );
   margin-top: 2rem;
   margin-bottom: 3rem;
 }
